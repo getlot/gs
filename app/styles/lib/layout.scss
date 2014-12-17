@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, header, footer {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  color: #f0f0f0;
+}
+
+a {
+  color: #f0f0f0;
+}
+
+.l-header {
+  width: 100%;
+  padding: 0;
+  background: linear-gradient(to bottom,#2d2d2d 0%,#1e1e1e 100%);
+
+  > .l-header-inner {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+.l-page {
+  width: 100%;
+  padding: 0;
+  background: linear-gradient(to bottom,#141414 0%,#202020 100%);
+  overflow: inherit;
+
+  > .l-main {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
+
+.l-footer {
+  width: 100%;
+  padding: $gutter/2 0;
+  background: #151515;
+
+  > .region-footer {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+}
