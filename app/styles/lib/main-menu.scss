@@ -1,0 +1,17 @@
+#block-system-main-menu ul.menu {
+  display: table;
+  width: 100%;
+  > li {
+    display: table-cell;
+    width: percentage(1 / 4);
+    text-align: center;
+    &.active-trail {
+      background: #f9c203;
+    }
+    > a {
+      display: block;
+      width: 100%;
+    }
+  }
+
+}

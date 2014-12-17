@@ -2,18 +2,24 @@
   box-sizing: border-box;
 }
 
-html, body, header, footer {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
 html {
   color: #f0f0f0;
+  height: 100%;
 }
 
-a {
+body {
+   height: 100%;
+   overflow-y:scroll;
+}
+
+a, a:hover {
   color: #f0f0f0;
+  text-decoration: none;
+}
+
+.page-wrap {
+  min-height: 100%;
+  background: linear-gradient(to bottom,#141414 0%,#202020 100%);
 }
 
 .l-header {
@@ -31,8 +37,10 @@ a {
 .l-page {
   width: 100%;
   padding: 0;
-  background: linear-gradient(to bottom,#141414 0%,#202020 100%);
   overflow: inherit;
+  &:after {
+    height: 80px;
+  }
 
   > .l-main {
     width: 1240px;
@@ -43,8 +51,10 @@ a {
 
 .l-footer {
   width: 100%;
-  padding: $gutter/2 0;
+  height: 80px;
+  padding: $gutter / 2 0;
   background: #151515;
+  margin-top:-80px;
 
   > .region-footer {
     width: 1240px;
