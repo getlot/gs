@@ -9,6 +9,9 @@
       float: left;
       display: inline-block;
       position: relative;
+      > .views-field-title {
+        text-align: center;
+      }
     }
   }
 }
@@ -26,4 +29,12 @@
       position: relative;
     }
   }
+}
+
+.view-ra-news {
+  .views-field-title {
+    font-size: 1.5em;
+    line-height: 2em;
+  }
+
 }

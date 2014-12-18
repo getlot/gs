@@ -8,3 +8,58 @@
     display: inline-block;
   }
 }
+
+.node-product .field-name-field-img {
+	width: 50%;
+	float: left;
+	margin-right: $gutter;
+	&:after {
+		content: " ";
+		display: block;
+	}
+	> .field-items {
+		margin:0  $gutter / -8;
+		> .field-item {
+			margin: $gutter / 8;
+			float: left;
+			position:relative;
+	    	width: percentage(1 / 3);
+		    cursor: pointer;
+	    	> img {
+	    		display: block;
+	    		float: left;
+	    	}
+			&:first-child {
+				width: 100%;
+			}
+	    	&:after, &:before {
+				position:absolute;
+				opacity:0;
+				transition: all 0.5s;
+			    pointer-events:none;
+			    cursor: pointer;
+	    	}
+	    	&:after {
+    		    content:'\A';
+			    width:100%; height:100%;
+			    top:0; left:0;
+			    background: hsla(47, 98%, 49%, 0.6);;
+	    	}
+	    	&:before {
+			    content: "\f00e";
+			    font-family: "FontAwesome";
+			    font-size: 4em;
+			    width:100%;
+			    color:#fff;
+			    z-index:1;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    padding:4px 10px;
+			    text-align:center;
+	    	}
+			&:hover:after, &:hover:before {
+				opacity:1;				
+			}
+		}
+	}
+}
