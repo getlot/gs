@@ -1,7 +1,11 @@
 #block-system-main-menu ul.menu {
+  margin: 0;
   display: table;
   width: 100%;
   > li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     display: table-cell;
     width: percentage(1 / 4);
     text-align: center;
@@ -9,6 +13,7 @@
       background: #f9c203;
     }
     > a {
+      padding: $gutter / 2;
       display: block;
       width: 100%;
     }
