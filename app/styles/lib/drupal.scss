@@ -1,1 +1,21 @@
-$gutter: 24px;
+@mixin h-rhythm($font-size, $line-height, $margin-top, $margin-bottom) {
+  font-size: $font-size;
+  line-height: $line-height;
+  margin: $margin-top 0 $margin-bottom;
+  padding: 0;
+}
+
+@mixin view-grid($columns, $gutter-width: $gutter) {
+  > .view-content {
+    margin: 0 $gutter-width / -2;
+    width: 100%;
+
+    > .views-row {
+      width: percentage(1 / $columns);
+      padding: $gutter-width / 2;
+      float: left;
+      display: inline-block;
+      position: relative;
+    }
+  }
+}
