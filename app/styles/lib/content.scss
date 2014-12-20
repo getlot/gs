@@ -3,6 +3,9 @@ a, a:hover, li a.active-trail, li a.active {
   text-decoration: none;
 }
 
+.region-promo {
+	  @include shadow-7();
+}
 #node-46 {
   .field-name-body {
     float: left;

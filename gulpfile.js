@@ -14,15 +14,16 @@ var pagespeed = require('psi');
 var reload = browserSync.reload;
 
 var AUTOPREFIXER_BROWSERS = [
-  'ie >= 10',
-  'ie_mob >= 10',
+  'ie >= 9',
+  'ie_mob >= 9',
   'ff >= 30',
-  'chrome >= 34',
+  'chrome >= 32',
   'safari >= 7',
   'opera >= 23',
   'ios >= 7',
-  'android >= 4.4',
+  'android >= 4.2',
   'bb >= 10'
+//'last 2 versions'
 ];
 
 
