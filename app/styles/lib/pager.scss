@@ -1,1 +1,54 @@
+.item-list ul.pager {
+  margin: 0 auto;
+  padding: $gutter / 2 0;
+  display: table;
+  list-style: none;
+  > li {
+    margin: 0;
+    padding: 0;
+    &.pager-current, > a {
+      padding: $gutter / 4 $gutter / 2 ;
+      position: relative;
+      float: left;
+    }
+  }
+}
 
+.item-list ul.pager {
+  margin: $gutter / 2 auto;
+
+  > li.pager-current, > li > a {
+    border: 1px solid black;
+    margin-left: -1px;
+  }
+  :first-child {
+    margin-left: 0;
+  }
+
+  > li.pager-current, > li > a:active {
+    background: #1c1c1c;
+    background: rgba(white, .01);
+    border-color: black rgba(black, .65) rgba(black, .6);
+    box-shadow: inset 0 1px rgba(black, .05),
+                        inset 0 2px 2px rgba(black, .3),
+                        0 1px rgba(white, .06);
+  }
+
+  > li > a {
+    text-decoration: none;
+    text-shadow: 0 1px black;
+    background-clip: padding-box;
+    border-color: rgba(black, .9);
+    background: linear-gradient(top, rgba(white, .04), rgba(white, 0));
+    box-shadow: inset 0 0 0 1px rgba(white, .04),
+                        inset 0 1px rgba(white, .04),
+                        inset 0 -1px rgba(black, .15),
+                        0 1px 1px rgba(black, .1);
+    transition: .1s ease-out;
+
+    &:hover {
+      background-color: #333;
+      background-color: rgba(white, .05);
+    }
+  }
+}

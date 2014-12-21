@@ -1,5 +1,6 @@
 #block-menu-menu-footer-menu ul.menu {
   margin: 0;
+  float: left;
   > li {
     margin: 0;
     padding: 0;
@@ -7,13 +8,14 @@
     display: inline-block;
     float: left;
     text-align: center;
-    &.active-trail {
-      background: #f9c203;
-    }
+    border-right: 1px solid #888888;
     > a {
-      padding: $gutter / 4;
+      padding: 0 $gutter / 2;
       display: block;
       width: 100%;
     }
+  }
+  > li:last-child {
+    border-right: 0px;
   }
 }

@@ -3,9 +3,61 @@ a, a:hover, li a.active-trail, li a.active {
   text-decoration: none;
 }
 
-.region-promo {
-	  @include shadow-7();
+h2 {
+	text-shadow: 0 1px 1px #000000;
 }
+.region-promo {
+	  @include shadow-7;
+}
+
+.sidebar .block {
+	background: rgba(0,0,0,.3);
+	padding: $gutter / 2;
+	padding-top: 0;
+	margin-bottom: $gutter / 2;
+	h2 {
+		border-bottom: 1px solid #222222;
+		margin-bottom: $gutter / 2;
+		&:after {
+			content: " ";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background: #010101;
+		}
+	}
+}
+
+#block-block-13 {
+	display: table;
+	margin: 0 auto;
+}
+
+li.expanded, li.collapsed, li.leaf {
+	margin: 0;
+	padding: 0;
+}
+
+
+#block-menu-menu-category-menu > .content > ul.menu{
+	li {
+		margin: 0;
+		list-style: none;
+		padding-left: $gutter / 4;
+		> a {
+			display: block;
+		  padding: $gutter / 8;
+	    color: $carrotColor;
+
+		  &:hover {
+		    background: rgba(50,50,50,.5);
+		    color: $carrotColor;
+		  }
+		}
+	}
+}
+
+
 #node-46 {
   .field-name-body {
     float: left;
@@ -51,7 +103,7 @@ a, a:hover, li a.active-trail, li a.active {
     		    content:'\A';
 			    width:100%; height:100%;
 			    top:0; left:0;
-			    background: hsla(47, 98%, 49%, 0.6);;
+			    background: hsla(47, 98%, 49%, 0.6);
 	    	}
 	    	&:before {
 			    content: "\f00e";

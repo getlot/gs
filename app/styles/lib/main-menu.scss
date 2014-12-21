@@ -10,7 +10,7 @@
     width: percentage(1 / 4);
     text-align: center;
     &.active-trail {
-      background: #f9c203;
+      background: $sunColor;
     }
     > a {
       padding: $gutter / 2;

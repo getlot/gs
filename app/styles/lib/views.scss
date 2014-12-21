@@ -9,10 +9,16 @@
   @include view-grid(3);
 }
 
-.view-ra-news {
+.view-ra-news.view-display-id-page {
   .views-field-title {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+.view-ra-news {
+  .readall {
+    text-align: right;
   }
 }
 
@@ -34,5 +40,25 @@
       margin-left: $gutter;
       font-size: 2rem;
     }
+  }
+}
+
+.view-services a {
+  color: $carrotColor;
+  display: block;
+  padding: $gutter / 4 0;
+  padding-left: $gutter;
+
+  &:hover {
+    background: rgba(50,50,50,.5);
+    color: $carrotColor;
+  }
+  &:before {
+    content: "\f101";
+    font-family: "FontAwesome";
+    display: inline-block;
+    font-size: 1rem;
+    width: 1rem;
+    margin-left: -1rem;
   }
 }

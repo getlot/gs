@@ -15,7 +15,7 @@
 /* ===============================================================
 Basic Swiper Styles
 ================================================================*/
-.view-slider {
+.swiper-slider {
 	margin:0 auto;
 	position:relative;
 	overflow:hidden;
@@ -23,7 +23,7 @@ Basic Swiper Styles
 	/* Fix of Webkit flickering */
 	z-index:1;
 }
-.view-slider .view-content {
+.swiper-slider .view-content {
 	position:relative;
 	width:100%;
 	transition-property:transform, left, top;
@@ -32,7 +32,7 @@ Basic Swiper Styles
 	transition-timing-function:ease;
 	box-sizing: content-box;
 }
-.swiper-free-mode > .swiper-wrapper {
+.swiper-free-mode > .view-content {
 	transition-timing-function: ease-out;
 	margin: 0 auto;
 }
@@ -103,7 +103,7 @@ Pagination Styles
 
 }
 
-.view-slider .arrow-left {
+.swiper-slider .arrow-left {
 	position:absolute;
 	left:0;
 	top:50%;
@@ -121,7 +121,7 @@ Pagination Styles
 	}
 }
 
-.view-slider .arrow-right {
+.swiper-slider .arrow-right {
 	position:absolute;
 	right: 0;
 	top:50%;

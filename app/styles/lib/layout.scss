@@ -1,3 +1,5 @@
+$width: 1240px;
+
 * {
   box-sizing: border-box;
 }
@@ -14,18 +16,18 @@ body {
 
 .page-wrap {
   min-height: 100%;
-  background: #141414;
-  background: linear-gradient(to bottom,#141414 0%,#202020 100%);
-
+  min-width: $width;
+  background: #262626;
 }
 
 .l-header {
   width: 100%;
+  min-width: $width;
   padding: 0;
   background: linear-gradient(to bottom,#2d2d2d 0%,#1e1e1e 100%);
 
   > .l-header-inner {
-    width: 1240px;
+    width: $width;
     margin: 0 auto;
     padding: 0 40px;
   }
@@ -33,10 +35,11 @@ body {
 
 .l-navigation {
   width: 100%;
+  min-width: $width;
   padding: 0;
 
   > nav {
-    width: 1240px;
+    width: $width;
     margin: 0 auto;
     padding: 0 40px;
   }
@@ -44,6 +47,7 @@ body {
 
 .l-page {
   width: 100%;
+  min-width: $width;
   padding: 0;
   overflow: inherit;
   &:after {
@@ -51,21 +55,23 @@ body {
   }
 
   > .l-main {
-    width: 1240px;
+    width: $width;
     margin: 0 auto;
     padding: 0 40px;
+    padding-bottom: $gutter;
   }
 }
 
 .l-footer {
   width: 100%;
+  min-width: $width;
   height: 80px;
   padding: $gutter / 2 0;
   background: #151515;
   margin-top:-80px;
 
   > .region-footer {
-    width: 1240px;
+    width: $width;
     margin: 0 auto;
     padding: 0 40px;
   }
